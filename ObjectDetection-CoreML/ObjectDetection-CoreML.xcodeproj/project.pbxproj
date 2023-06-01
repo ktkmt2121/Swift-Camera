@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE6963F07A54E3EFBBABE254 /* Pods_ObjectDetection_CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45501806FF0F274DBB794BEB /* Pods_ObjectDetection_CoreML.framework */; };
 		E956E0C428AB7926005A1871 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956E0C328AB7926005A1871 /* AppDelegate.swift */; };
 		E956E0C628AB7926005A1871 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956E0C528AB7926005A1871 /* SceneDelegate.swift */; };
 		E956E0C828AB7926005A1871 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956E0C728AB7926005A1871 /* ViewController.swift */; };
@@ -14,10 +15,13 @@
 		E956E0CD28AB7928005A1871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956E0CC28AB7928005A1871 /* Assets.xcassets */; };
 		E956E0D028AB7928005A1871 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E956E0CE28AB7928005A1871 /* LaunchScreen.storyboard */; };
 		E956E0DC28ACD391005A1871 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956E0DB28ACD391005A1871 /* Utils.swift */; };
-		EBEC1B6A2A25248A002CCE0B /* yolov5.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = EBEC1B692A25248A002CCE0B /* yolov5.mlpackage */; };
+		EB74F02D2A28751000DB2651 /* yolov5.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EB74F02C2A28751000DB2651 /* yolov5.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DD76884853F287FC2BCB027 /* Pods-ObjectDetection-CoreML.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectDetection-CoreML.release.xcconfig"; path = "Target Support Files/Pods-ObjectDetection-CoreML/Pods-ObjectDetection-CoreML.release.xcconfig"; sourceTree = "<group>"; };
+		45501806FF0F274DBB794BEB /* Pods_ObjectDetection_CoreML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectDetection_CoreML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DC93313F177A2601F41EF3D /* Pods-ObjectDetection-CoreML.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectDetection-CoreML.debug.xcconfig"; path = "Target Support Files/Pods-ObjectDetection-CoreML/Pods-ObjectDetection-CoreML.debug.xcconfig"; sourceTree = "<group>"; };
 		E956E0C028AB7926005A1871 /* ObjectDetection-CoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ObjectDetection-CoreML.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E956E0C328AB7926005A1871 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E956E0C528AB7926005A1871 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,7 +32,7 @@
 		E956E0D128AB7928005A1871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E956E0DB28ACD391005A1871 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		E956E0DE28ACF6CC005A1871 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		EBEC1B692A25248A002CCE0B /* yolov5.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = yolov5.mlpackage; path = ../../../yolov5.mlpackage; sourceTree = "<group>"; };
+		EB74F02C2A28751000DB2651 /* yolov5.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = yolov5.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6963F07A54E3EFBBABE254 /* Pods_ObjectDetection_CoreML.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91C63EBD60A5DC156FEFC967 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45501806FF0F274DBB794BEB /* Pods_ObjectDetection_CoreML.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F9E0E01ABB2DE86924ADE2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DC93313F177A2601F41EF3D /* Pods-ObjectDetection-CoreML.debug.xcconfig */,
+				0DD76884853F287FC2BCB027 /* Pods-ObjectDetection-CoreML.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E956E0B728AB7926005A1871 = {
 			isa = PBXGroup;
 			children = (
 				E956E0C228AB7926005A1871 /* ObjectDetection-CoreML */,
 				E956E0C128AB7926005A1871 /* Products */,
+				9F9E0E01ABB2DE86924ADE2C /* Pods */,
+				91C63EBD60A5DC156FEFC967 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,7 +93,7 @@
 				E956E0CE28AB7928005A1871 /* LaunchScreen.storyboard */,
 				E956E0D128AB7928005A1871 /* Info.plist */,
 				E956E0DB28ACD391005A1871 /* Utils.swift */,
-				EBEC1B692A25248A002CCE0B /* yolov5.mlpackage */,
+				EB74F02C2A28751000DB2651 /* yolov5.mlmodel */,
 			);
 			path = "ObjectDetection-CoreML";
 			sourceTree = "<group>";
@@ -81,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E956E0D428AB7928005A1871 /* Build configuration list for PBXNativeTarget "ObjectDetection-CoreML" */;
 			buildPhases = (
+				9C293CE6B48283DFE266E602 /* [CP] Check Pods Manifest.lock */,
 				E956E0BC28AB7926005A1871 /* Sources */,
 				E956E0BD28AB7926005A1871 /* Frameworks */,
 				E956E0BE28AB7926005A1871 /* Resources */,
+				CEDE79321A01BE7170D20F48 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +166,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9C293CE6B48283DFE266E602 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObjectDetection-CoreML-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEDE79321A01BE7170D20F48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ObjectDetection-CoreML/Pods-ObjectDetection-CoreML-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ObjectDetection-CoreML/Pods-ObjectDetection-CoreML-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ObjectDetection-CoreML/Pods-ObjectDetection-CoreML-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E956E0BC28AB7926005A1871 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -147,9 +215,9 @@
 			files = (
 				E956E0DC28ACD391005A1871 /* Utils.swift in Sources */,
 				E956E0C828AB7926005A1871 /* ViewController.swift in Sources */,
-				EBEC1B6A2A25248A002CCE0B /* yolov5.mlpackage in Sources */,
 				E956E0C428AB7926005A1871 /* AppDelegate.swift in Sources */,
 				E956E0C628AB7926005A1871 /* SceneDelegate.swift in Sources */,
+				EB74F02D2A28751000DB2651 /* yolov5.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +360,7 @@
 		};
 		E956E0D528AB7928005A1871 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DC93313F177A2601F41EF3D /* Pods-ObjectDetection-CoreML.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -300,7 +369,10 @@
 				DEVELOPMENT_TEAM = HRXKL4X6N7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ObjectDetection-CoreML/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = NSPhotoLibraryAddUsageDescription;
+				INFOPLIST_KEY_LSApplicationCategoryType = NSPhotoLibraryAddUsageDescription;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This sample uses the camera to capture images of items for object recognition using YOLOv5.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = privcy;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,6 +393,7 @@
 		};
 		E956E0D628AB7928005A1871 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DD76884853F287FC2BCB027 /* Pods-ObjectDetection-CoreML.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -329,7 +402,10 @@
 				DEVELOPMENT_TEAM = HRXKL4X6N7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ObjectDetection-CoreML/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = NSPhotoLibraryAddUsageDescription;
+				INFOPLIST_KEY_LSApplicationCategoryType = NSPhotoLibraryAddUsageDescription;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This sample uses the camera to capture images of items for object recognition using YOLOv5.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = privcy;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
