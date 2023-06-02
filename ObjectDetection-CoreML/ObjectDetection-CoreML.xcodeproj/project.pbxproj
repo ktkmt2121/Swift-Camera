@@ -15,7 +15,7 @@
 		E956E0CD28AB7928005A1871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956E0CC28AB7928005A1871 /* Assets.xcassets */; };
 		E956E0D028AB7928005A1871 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E956E0CE28AB7928005A1871 /* LaunchScreen.storyboard */; };
 		E956E0DC28ACD391005A1871 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956E0DB28ACD391005A1871 /* Utils.swift */; };
-		EB74F02D2A28751000DB2651 /* yolov5.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EB74F02C2A28751000DB2651 /* yolov5.mlmodel */; };
+		EB74F0702A296C9E00DB2651 /* yolov5.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EB74F06F2A296C9D00DB2651 /* yolov5.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,7 @@
 		E956E0D128AB7928005A1871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E956E0DB28ACD391005A1871 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		E956E0DE28ACF6CC005A1871 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		EB74F02C2A28751000DB2651 /* yolov5.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = yolov5.mlmodel; sourceTree = "<group>"; };
+		EB74F06F2A296C9D00DB2651 /* yolov5.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = yolov5.mlmodel; path = ../../../../Downloads/yolov5.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +92,8 @@
 				E956E0CC28AB7928005A1871 /* Assets.xcassets */,
 				E956E0CE28AB7928005A1871 /* LaunchScreen.storyboard */,
 				E956E0D128AB7928005A1871 /* Info.plist */,
+				EB74F06F2A296C9D00DB2651 /* yolov5.mlmodel */,
 				E956E0DB28ACD391005A1871 /* Utils.swift */,
-				EB74F02C2A28751000DB2651 /* yolov5.mlmodel */,
 			);
 			path = "ObjectDetection-CoreML";
 			sourceTree = "<group>";
@@ -217,7 +217,7 @@
 				E956E0C828AB7926005A1871 /* ViewController.swift in Sources */,
 				E956E0C428AB7926005A1871 /* AppDelegate.swift in Sources */,
 				E956E0C628AB7926005A1871 /* SceneDelegate.swift in Sources */,
-				EB74F02D2A28751000DB2651 /* yolov5.mlmodel in Sources */,
+				EB74F0702A296C9E00DB2651 /* yolov5.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

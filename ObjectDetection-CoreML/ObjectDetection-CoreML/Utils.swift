@@ -1,7 +1,15 @@
 
 import UIKit
 import Vision
-
+/*
+let classes = [
+    "bottle",
+    "hand",
+    "face",
+    "wasabi",
+    "sushi",
+    "poteto"
+];*/
 let classes = [
     "bottle",
     "hand",
