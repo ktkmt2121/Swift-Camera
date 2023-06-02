@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE6963F07A54E3EFBBABE254 /* Pods_ObjectDetection_CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45501806FF0F274DBB794BEB /* Pods_ObjectDetection_CoreML.framework */; };
+		4745E0BA41209A71DBEB255B /* Pods_ObjectDetection_CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B628337A16B6FAF3F9DB5DA5 /* Pods_ObjectDetection_CoreML.framework */; };
 		E956E0C428AB7926005A1871 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956E0C328AB7926005A1871 /* AppDelegate.swift */; };
 		E956E0C628AB7926005A1871 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956E0C528AB7926005A1871 /* SceneDelegate.swift */; };
 		E956E0C828AB7926005A1871 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956E0C728AB7926005A1871 /* ViewController.swift */; };
@@ -15,13 +15,15 @@
 		E956E0CD28AB7928005A1871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E956E0CC28AB7928005A1871 /* Assets.xcassets */; };
 		E956E0D028AB7928005A1871 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E956E0CE28AB7928005A1871 /* LaunchScreen.storyboard */; };
 		E956E0DC28ACD391005A1871 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956E0DB28ACD391005A1871 /* Utils.swift */; };
+		EB749F292A29BDD500C87349 /* View_all.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB749F282A29BDD500C87349 /* View_all.swift */; };
 		EB74F0702A296C9E00DB2651 /* yolov5.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EB74F06F2A296C9D00DB2651 /* yolov5.mlmodel */; };
+		EB74F08A2A297E2300DB2651 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB74F0892A297E2300DB2651 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0DD76884853F287FC2BCB027 /* Pods-ObjectDetection-CoreML.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectDetection-CoreML.release.xcconfig"; path = "Target Support Files/Pods-ObjectDetection-CoreML/Pods-ObjectDetection-CoreML.release.xcconfig"; sourceTree = "<group>"; };
-		45501806FF0F274DBB794BEB /* Pods_ObjectDetection_CoreML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectDetection_CoreML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DC93313F177A2601F41EF3D /* Pods-ObjectDetection-CoreML.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectDetection-CoreML.debug.xcconfig"; path = "Target Support Files/Pods-ObjectDetection-CoreML/Pods-ObjectDetection-CoreML.debug.xcconfig"; sourceTree = "<group>"; };
+		657C50E99944612385AE4370 /* Pods-ObjectDetection-CoreML.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectDetection-CoreML.debug.xcconfig"; path = "Target Support Files/Pods-ObjectDetection-CoreML/Pods-ObjectDetection-CoreML.debug.xcconfig"; sourceTree = "<group>"; };
+		B628337A16B6FAF3F9DB5DA5 /* Pods_ObjectDetection_CoreML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectDetection_CoreML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6AC78E43F96FA1893D594F2 /* Pods-ObjectDetection-CoreML.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectDetection-CoreML.release.xcconfig"; path = "Target Support Files/Pods-ObjectDetection-CoreML/Pods-ObjectDetection-CoreML.release.xcconfig"; sourceTree = "<group>"; };
 		E956E0C028AB7926005A1871 /* ObjectDetection-CoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ObjectDetection-CoreML.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E956E0C328AB7926005A1871 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E956E0C528AB7926005A1871 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,7 +34,12 @@
 		E956E0D128AB7928005A1871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E956E0DB28ACD391005A1871 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		E956E0DE28ACF6CC005A1871 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		EB749F282A29BDD500C87349 /* View_all.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View_all.swift; sourceTree = "<group>"; };
 		EB74F06F2A296C9D00DB2651 /* yolov5.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = yolov5.mlmodel; path = ../../../../Downloads/yolov5.mlmodel; sourceTree = "<group>"; };
+		EB74F0732A297D6E00DB2651 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EB74F0882A297DED00DB2651 /* ObjectDetection-CoreML copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ObjectDetection-CoreML copy-Info.plist"; path = "/Users/tsutsuitatsumi/git/Swift-camera/ObjectDetection-CoreML/ObjectDetection-CoreML copy-Info.plist"; sourceTree = "<absolute>"; };
+		EB74F0892A297E2300DB2651 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EBAD312B2A298B5E00E0267D /* Accessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accessibility.framework; path = System/Library/Frameworks/Accessibility.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE6963F07A54E3EFBBABE254 /* Pods_ObjectDetection_CoreML.framework in Frameworks */,
+				4745E0BA41209A71DBEB255B /* Pods_ObjectDetection_CoreML.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +57,9 @@
 		91C63EBD60A5DC156FEFC967 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				45501806FF0F274DBB794BEB /* Pods_ObjectDetection_CoreML.framework */,
+				EBAD312B2A298B5E00E0267D /* Accessibility.framework */,
+				EB74F0732A297D6E00DB2651 /* GoogleService-Info.plist */,
+				B628337A16B6FAF3F9DB5DA5 /* Pods_ObjectDetection_CoreML.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -58,8 +67,8 @@
 		9F9E0E01ABB2DE86924ADE2C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5DC93313F177A2601F41EF3D /* Pods-ObjectDetection-CoreML.debug.xcconfig */,
-				0DD76884853F287FC2BCB027 /* Pods-ObjectDetection-CoreML.release.xcconfig */,
+				657C50E99944612385AE4370 /* Pods-ObjectDetection-CoreML.debug.xcconfig */,
+				D6AC78E43F96FA1893D594F2 /* Pods-ObjectDetection-CoreML.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -71,6 +80,7 @@
 				E956E0C128AB7926005A1871 /* Products */,
 				9F9E0E01ABB2DE86924ADE2C /* Pods */,
 				91C63EBD60A5DC156FEFC967 /* Frameworks */,
+				EB74F0882A297DED00DB2651 /* ObjectDetection-CoreML copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +102,8 @@
 				E956E0CC28AB7928005A1871 /* Assets.xcassets */,
 				E956E0CE28AB7928005A1871 /* LaunchScreen.storyboard */,
 				E956E0D128AB7928005A1871 /* Info.plist */,
+				EB74F0892A297E2300DB2651 /* GoogleService-Info.plist */,
+				EB749F282A29BDD500C87349 /* View_all.swift */,
 				EB74F06F2A296C9D00DB2651 /* yolov5.mlmodel */,
 				E956E0DB28ACD391005A1871 /* Utils.swift */,
 			);
@@ -105,11 +117,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E956E0D428AB7928005A1871 /* Build configuration list for PBXNativeTarget "ObjectDetection-CoreML" */;
 			buildPhases = (
-				9C293CE6B48283DFE266E602 /* [CP] Check Pods Manifest.lock */,
+				C610B39615001E5C13B038BF /* [CP] Check Pods Manifest.lock */,
 				E956E0BC28AB7926005A1871 /* Sources */,
 				E956E0BD28AB7926005A1871 /* Frameworks */,
 				E956E0BE28AB7926005A1871 /* Resources */,
-				CEDE79321A01BE7170D20F48 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,6 +155,10 @@
 				Base,
 			);
 			mainGroup = E956E0B728AB7926005A1871;
+			packageReferences = (
+				EB74F08B2A297ECB00DB2651 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				EB749F212A29953D00C87349 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			productRefGroup = E956E0C128AB7926005A1871 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -159,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E956E0D028AB7928005A1871 /* LaunchScreen.storyboard in Resources */,
+				EB74F08A2A297E2300DB2651 /* GoogleService-Info.plist in Resources */,
 				E956E0CD28AB7928005A1871 /* Assets.xcassets in Resources */,
 				E956E0CB28AB7926005A1871 /* Main.storyboard in Resources */,
 			);
@@ -167,7 +183,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9C293CE6B48283DFE266E602 /* [CP] Check Pods Manifest.lock */ = {
+		C610B39615001E5C13B038BF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -189,23 +205,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CEDE79321A01BE7170D20F48 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ObjectDetection-CoreML/Pods-ObjectDetection-CoreML-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ObjectDetection-CoreML/Pods-ObjectDetection-CoreML-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ObjectDetection-CoreML/Pods-ObjectDetection-CoreML-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -215,6 +214,7 @@
 			files = (
 				E956E0DC28ACD391005A1871 /* Utils.swift in Sources */,
 				E956E0C828AB7926005A1871 /* ViewController.swift in Sources */,
+				EB749F292A29BDD500C87349 /* View_all.swift in Sources */,
 				E956E0C428AB7926005A1871 /* AppDelegate.swift in Sources */,
 				E956E0C628AB7926005A1871 /* SceneDelegate.swift in Sources */,
 				EB74F0702A296C9E00DB2651 /* yolov5.mlmodel in Sources */,
@@ -269,7 +269,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -329,7 +329,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -360,10 +360,11 @@
 		};
 		E956E0D528AB7928005A1871 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DC93313F177A2601F41EF3D /* Pods-ObjectDetection-CoreML.debug.xcconfig */;
+			baseConfigurationReference = 657C50E99944612385AE4370 /* Pods-ObjectDetection-CoreML.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HRXKL4X6N7;
@@ -393,10 +394,11 @@
 		};
 		E956E0D628AB7928005A1871 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DD76884853F287FC2BCB027 /* Pods-ObjectDetection-CoreML.release.xcconfig */;
+			baseConfigurationReference = D6AC78E43F96FA1893D594F2 /* Pods-ObjectDetection-CoreML.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HRXKL4X6N7;
@@ -446,6 +448,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB749F212A29953D00C87349 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		EB74F08B2A297ECB00DB2651 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = E956E0B828AB7926005A1871 /* Project object */;
 }

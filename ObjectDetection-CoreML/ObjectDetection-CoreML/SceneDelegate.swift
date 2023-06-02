@@ -39,7 +39,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
+    /*
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions:
+                     FirebaseApp.configure()
+                     [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
+        
+        return true
+    }
+*/
 
 }
 
