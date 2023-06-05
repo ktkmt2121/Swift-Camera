@@ -153,7 +153,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         
         //ここの秒数を変えたら、撮影間隔が変わる
         
-        if let lastRecognitionTime = lastRecognitionTime, Date().timeIntervalSince(lastRecognitionTime) < 0.2 {
+        if let lastRecognitionTime = lastRecognitionTime, Date().timeIntervalSince(lastRecognitionTime) < 1.0 {
             return
         }
         
@@ -176,7 +176,6 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         }
     }
     
-    
     func captureAndSaveImage(from sampleBuffer: CMSampleBuffer) {
         if let imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) {
             let ciImage = CIImage(cvPixelBuffer: imageBuffer)
@@ -194,23 +193,19 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
     
     func uploadImage(_ image: UIImage) {
-        // Webhookのエンドポイントとパラメーターに適したリクエストの作成
-    //https://webhook.site/#!/46784ce6-4a38-435d-9a87-dda9e7dd5010/be90dfe6-edad-493b-89fe-2640401239b7/1
-        // URLはここを変更
-        let url = URL(string: "https://webhook.site/46784ce6-4a38-435d-9a87-dda9e7dd5010")!
+        let url = URL(string: "https://d861-163-221-127-216.ngrok-free.app/fileupload")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         
-        // 画像データをリクエストに追加
         let imageData = image.jpegData(compressionQuality: 0.8)!
+        
         let boundary = "Boundary-\(UUID().uuidString)"
         let contentType = "multipart/form-data; boundary=\(boundary)"
-        
         request.setValue(contentType, forHTTPHeaderField: "Content-Type")
         
         var body = Data()
         body.append("--\(boundary)\r\n".data(using: .utf8)!)
-        body.append("Content-Disposition: form-data; name=\"image\"; filename=\"image.jpg\"\r\n".data(using: .utf8)!)
+        body.append("Content-Disposition: form-data; name=\"file\"; filename=\"image.jpg\"\r\n".data(using: .utf8)!)
         body.append("Content-Type: image/jpeg\r\n\r\n".data(using: .utf8)!)
         body.append(imageData)
         body.append("\r\n".data(using: .utf8)!)
@@ -218,18 +213,20 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         
         request.httpBody = body
         
-        // リクエストの送信
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let error = error {
                 print("Error uploading image: \(error)")
             } else if let data = data {
-                // レスポンスの処理
-                // アップロードが成功した場合は、ここで適切な処理を実行してください
-                print("Image uploaded successfully")
+                // Process the response
+                if let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+                    print("Response JSON: \(json)")
+                }
             }
         }
         task.resume()
     }
+    
+    
     
     @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
         if let error = error {
